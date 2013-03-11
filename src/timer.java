@@ -105,12 +105,6 @@ public class timer {
 		time = System.currentTimeMillis();
 		selectionsort.sort(array);
 		System.out.println("\t Sorted: " + (System.currentTimeMillis() - time) + "ms");
-		
-		int []myArray = {23,6,2,3,2,5,8,0,78,5,2};
-		insertionsort.sort(myArray);
-		for (Integer i : myArray) {
-			System.out.print(" " + i);
-		}
 	}
 	
 	public static void scrambleArray(int [] array) {
