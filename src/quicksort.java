@@ -1,7 +1,7 @@
 public class quicksort {
  
   public static void sort (int [] array, int left, int right) {
-  	/*
+	  	/*
 		 * Partition the array.
 		 */
 		int i = left, j = right;
@@ -9,7 +9,7 @@ public class quicksort {
 		while (i <= j) {
 			for(; array[i] < pivot;	i++) ; //Increment i until value lower than pivot is found
 			for(; array[j] > pivot; j--) ; //Decrement j until value higher than pivot is found
-			if (i <= j) {
+			if (i <= j) {				   // Make sure the current iteration has not put us passed i <= j.
 				swap(array, i, j);
 				i++;
 				j--;

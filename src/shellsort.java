@@ -16,7 +16,7 @@ public class shellsort {
 			if (gap == 2) {
 				gap = 1;
 			}else {
-				gap = (int)(gap / 2.2);
+				gap = (int)(gap / 2.2);		// Constant 2.2 derived from testing. Well used and documented for Shellsort.
 			}
 		}
 	}
