@@ -12,7 +12,6 @@ public class timer {
 		
 		int [] array = new int[size];
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * Quicksort
 		 */
 		scrambleArray(array);
@@ -25,7 +24,6 @@ public class timer {
 		quicksort.sort(array, 0, array.length - 1);
 		System.out.println("\t Sorted: " + (System.currentTimeMillis() - time) + "ms");
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * Bubblesort - Takes to long time with values > 75 000
 		 */
 		if (array.length < 75000) {
@@ -41,7 +39,6 @@ public class timer {
 			
 		}
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * InsertionSort
 		 */
 		scrambleArray(array);
@@ -54,7 +51,6 @@ public class timer {
 		insertionsort.sort(array);
 		System.out.println("\t Sorted: " + (System.currentTimeMillis() - time) + "ms");
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * Shellsort
 		 */
 		scrambleArray(array);
@@ -67,7 +63,6 @@ public class timer {
 		shellsort.sort(array);
 		System.out.println("\t Sorted: " + (System.currentTimeMillis() - time) + "ms");
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * Mergesort
 		 */
 		scrambleArray(array);
@@ -80,7 +75,6 @@ public class timer {
 		mergesort.sort(array);
 		System.out.println("\t Sorted: " + (System.currentTimeMillis() - time) + "ms");
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * Heapsort
 		 */
 		scrambleArray(array);
@@ -93,7 +87,6 @@ public class timer {
 		heapsort.sort(array);
 		System.out.println("\t Sorted: " + (System.currentTimeMillis() - time) + "ms");
 		/*
-		 * ---------------------------------------------------------------------------------
 		 * Selectionsort
 		 */
 		scrambleArray(array);
@@ -109,9 +102,8 @@ public class timer {
 	
 	public static void scrambleArray(int [] array) {
 		Random generator = new Random();
-		for (int i = 0; i < array.length - 1; i++) {
+		for (int i = 0; i < array.length - 1; i++)
 			array[i] = generator.nextInt();
-		}
 	}
 	
 }
